@@ -5,6 +5,8 @@ pipeline {
         stage('Check Ansible Version') {
             steps {
                 sh 'ls -all'
+                sh 'pwd'
+                sh 'whoami'
             }
         }
     }
