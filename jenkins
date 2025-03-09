@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Check Ansible Version') {
+            steps {
+                sh 'ansible --version'
+            }
+        }
+    }
+}
